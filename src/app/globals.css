@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Light mode (default) */
+html.light {
+  --background-color: #ffffff;
+  --foreground-color: #000000;
+  --primary-color: #3b82f6;
+  --primary-foreground-color: #ffffff;
+  --gray-color: #6b7280;
+  background-color: var(--background-color);
+  color: var(--foreground-color);
+}
+
+/* Dark mode */
+html.dark {
+  --background-color: #1e293b;
+  --foreground-color: #f1f5f9;
+  --primary-color: #2563eb;
+  --primary-foreground-color: #e0e7ff;
+  --gray-color: #9ca3af;
+  background-color: var(--background-color);
+  color: var(--foreground-color);
+}
+
+/* Gray mode */
+html.gray {
+  --background-color: #f3f4f6;
+  --foreground-color: #374151;
+  --primary-color: #6b7280;
+  --primary-foreground-color: #f9fafb;
+  --gray-color: #4b5563;
+  background-color: var(--background-color);
+  color: var(--foreground-color);
+}
+
+/* Custom mode */
+html.custom {
+  --background-color: #282c34;
+  --foreground-color: #61dafb;
+  --primary-color: #21a0a0;
+  --primary-foreground-color: #ffffff;
+  --gray-color: #718096;
+  background-color: var(--background-color);
+  color: var(--foreground-color);
+}
+
+/* Apply colors */
+body {
+  background-color: var(--background-color);
+  color: var(--foreground-color);
+}
+
+.bg-primary {
+  background-color: var(--primary-color) !important;
+}
+
+.text-primary {
+  color: var(--primary-color) !important;
+}
+
+.text-primary-foreground {
+  color: var(--primary-foreground-color) !important;
+}
+
+.border-primary {
+  border-color: var(--primary-color) !important;
+}
+
+.bg-background {
+  background-color: var(--background-color) !important;
+}
+
+.text-muted-foreground {
+  color: var(--gray-color) !important;
+}
