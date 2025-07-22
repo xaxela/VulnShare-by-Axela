@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-node_modules/ 
-.env 
-dist/ 
-=======
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # Dependencies
@@ -19,6 +14,8 @@ dist/
 
 # Production
 /build
+/dist
+/dist-ssr
 
 # Misc
 .DS_Store
@@ -53,6 +50,3 @@ lerna-debug.log*
 # Vite
 .vite
 .vite-node
-/dist
-/dist-ssr
->>>>>>> 6bf88849fd2ba8fd674bab40422d60a486fd6e74
