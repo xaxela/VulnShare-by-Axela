@@ -2,7 +2,7 @@ import type { NextApiRequest, NextApiResponse } from 'next';
 import { getUser } from '@/lib/user-store';
 import jwt from 'jsonwebtoken';
 
-const JWT_SECRET = process.env.JWT_SECRET || 'your_jwt_secret';
+const JWT_SECRET = process.env.JWT_SECRET || 'KG5CW5L+cF3qNlDbbR2DXQldxaoz6PkWd0bnaL/sjH7FtpbvNHGPpWyipTbttR9KMMYM6Ww0YnZAbpNkJs1SSw==';
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
   if (req.method !== 'POST') {
